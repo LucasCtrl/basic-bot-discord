@@ -1,0 +1,16 @@
+{
+  "name": "basic-bot-discord",
+  "version": "0.0.1",
+  "description": "A basic bot for discord",
+  "main": "app.js",
+  "repository": "https://github.com/LucasCtrl/basic-bot-discord",
+  "author": "LucasAlt <lucasalt@protonmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "discord.js": "^11.4.2"
+  },
+  "devDependencies": {
+    "standard": "^12.0.1"
+  }
+}
