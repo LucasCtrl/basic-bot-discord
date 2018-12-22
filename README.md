@@ -1,2 +1,2 @@
 # basic-bot-discord
-Un robot basique pour discord
+A basic template for creating Discord robots
