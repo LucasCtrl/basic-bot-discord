@@ -1,4 +1,6 @@
 module.exports = (bot, message) => {
+  // This event was executed when an user send a message in a channel
+
   // Ignore all bots
   if (message.author.bot) return
 

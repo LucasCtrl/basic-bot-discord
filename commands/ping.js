@@ -1,4 +1,7 @@
 exports.run = (bot, message) => {
+  // Delete the message you send in the channel
   message.delete()
-  message.reply(`Pong ! :ping_pong: ${Math.round(bot.ping)} ms`).catch(console.error)
+
+  // Send 'Pong!' and the latency between the bot and the API
+  message.reply(`Pong! :ping_pong: ${Math.round(bot.ping)} ms`).catch(console.error)
 }
