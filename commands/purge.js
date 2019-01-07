@@ -1,4 +1,5 @@
 exports.run = async (bot, message, args) => {
+  // Delete the message you send in the channel
   await message.delete()
 
   // If the author of the command can't delete messages, the command does not work
