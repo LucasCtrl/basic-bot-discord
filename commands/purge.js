@@ -1,4 +1,4 @@
-exports.run = async (bot, message, args) => {
+exports.run = async (bot, webhook, message, args) => {
   // Delete the message you send in the channel
   await message.delete()
 

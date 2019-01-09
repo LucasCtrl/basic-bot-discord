@@ -1,4 +1,4 @@
-exports.run = (bot, message) => {
+exports.run = (bot, webhook, message) => {
   // Delete the message you send in the channel
   message.delete()
 

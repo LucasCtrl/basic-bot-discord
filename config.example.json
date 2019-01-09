@@ -1,4 +1,8 @@
 {
   "token": "YOUR_BOT_TOKEN",
-  "prefix": "-"
+  "prefix": "-",
+  "webhook": {
+    "id": "",
+    "token": ""
+  }
 }

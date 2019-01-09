@@ -8,6 +8,8 @@ const config = require('./config.json')
 // Create an instance of a Discord client
 const bot = new Discord.Client()
 
+const webhook = new Discord.WebhookClient(config.webhook.id, config.webhook.token)
+
 // Pass data through bot
 bot.config = config
 bot.commands = new Enmap()
@@ -18,7 +20,7 @@ fs.readdir('./events/', (err, files) => {
   files.forEach(file => {
     const event = require(`./events/${file}`)
     let eventName = file.split('.')[0]
-    bot.on(eventName, event.bind(null, bot))
+    bot.on(eventName, event.bind(null, bot, webhook))
   })
 })
 
